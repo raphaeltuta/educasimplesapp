@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Adm - EducaSimples</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/adm_login.css">
+    <link rel="icon" type="image/png" href="/static/uploads/Logo EducaSimples.png" sizes="16x16">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login de Administrador</h2>
+        <form method="POST" action="{{ url_for('admin_login') }}">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 EducaSimples</p>
+    </div>
+</body>
+</html>

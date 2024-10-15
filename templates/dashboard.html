@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EducaSimples</title>
+    <link rel="stylesheet" href="/static/css/principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/static/uploads/Logo EducaSimples.png" sizes="16x16">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="container">
+            <h1>👋 Bem-vindo ao EducaSimples, {{ usuario }}!</h1>
+            <p>Transformando vidas por meio da educação 📚.</p>
+        </div>
+    </header>
+
+
+    <section class="dashboard-content">
+        <div class="content-container">
+            <h2>Sobre o EducaSimples</h2>
+            <p>O EducaSimples nasceu com o propósito de tornar a educação acessível a todos. Criamos uma plataforma que conecta alunos, professores e conteúdos de qualidade, permitindo que você aprenda no seu ritmo e de forma colaborativa.</p>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <a href="/materiais" class="button-link"> <!-- Link para Materiais de Estudo -->
+                        <h3>📘 Materiais de Estudo</h3>
+                        <p>Acesse nossos materiais de estudo organizados por disciplinas e níveis de ensino. Atualizado constantemente para que você sempre tenha o melhor conteúdo disponível.</p>
+                    </a>
+                </div>
+                
+                <div class="resource-card">
+                        <h3>🎓 Nossa Jornada</h3>
+                        <p>Começamos com a visão de um mundo onde o conhecimento é compartilhado de forma aberta e acessível. Hoje, ajudamos milhares de pessoas a realizar seus sonhos educacionais.</p>
+                </div>
+                
+                <div class="resource-card">
+                    <a href="/materiais" class="button-link"> <!-- Link para Vídeo-Aulas -->
+                        <h3>🎥 Vídeo-Aulas</h3>
+                        <p>Aprenda com vídeo-aulas ministradas por professores experientes e especialistas nas suas áreas. Conteúdo sempre atualizado e adaptado às suas necessidades.</p>
+                    </a>
+                </div>
+                
+                <div class="resource-card">
+                    <a href="/forum" class="button-link"> <!-- Link para Chat Colaborativo -->
+                        <h3>💬 Chat Colaborativo</h3>
+                        <p>Conecte-se com outros estudantes e professores para tirar dúvidas e trocar experiências. O aprendizado é mais eficiente quando colaborativo!</p>
+                    </a>
+                </div>
+                
+                <div class="resource-card">
+                    <a href="/professores" class="button-link"> <!-- Link para Professores -->
+                        <h3>👩‍🏫 Professores</h3>
+                        <p>Conheça nossos professores e suas áreas de especialização. Estamos aqui para guiá-lo em sua jornada de aprendizado.</p>
+                    </a>
+                </div>
+                
+                <div class="resource-card">
+                    <a href="/doacao" class="button-link"> <!-- Link para Doações -->
+                        <h3>💖 Doações</h3>
+                        <p>Contribua com nosso projeto e ajude a transformar vidas por meio da educação. Sua doação faz a diferença!</p>
+                    </a>
+                </div>
+            </div>
+            
+
+            <section class="motivational-section">
+                <h2>Nossa Missão</h2>
+                <p>Somos apaixonados pela ideia de que o conhecimento deve ser livre e acessível para todos. Acreditamos que a educação tem o poder de mudar o mundo, uma pessoa de cada vez. Você está pronto para transformar sua jornada?</p>
+
+                <div class="motivational-card">
+                    <h3>📈 Impacto Positivo</h3>
+                    <p>Em menos de 5 anos, ajudamos mais de 10 mil alunos a alcançarem seus sonhos. Estamos comprometidos com o seu sucesso.</p>
+                </div>
+
+                <div class="motivational-card">
+                    <h3>🌎 Comunidade Global</h3>
+                    <p>Você faz parte de uma comunidade global de alunos e professores que compartilham um objetivo comum: aprender e crescer juntos.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const sideMenu = document.querySelector('.side-menu');
+    
+            menuToggle.addEventListener('click', function() {
+                sideMenu.classList.toggle('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>

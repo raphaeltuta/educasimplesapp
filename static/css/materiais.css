@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte base */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Texto principal em branco */
+    background-color: #1c1c1c; /* Fundo escuro */
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: #2b2b2b;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff; /* Cor dourada para o logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff; /* Texto branco para os links */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #747070;
+    border-radius: 20px;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 80%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Materiais section */
+.materiais {
+    background-color: #2b2b2b;
+    padding: 50px 0;
+}
+
+.materiais .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.materiais h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff; /* Cor dourada */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Ajuste dos cards */
+.card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 250px; /* Cartões menores */
+    transition: transform 0.3s ease;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff; /* Cor dourada */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ccc; /* Texto cinza claro */
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.card img {
+    width: 100%;
+    height: 150px; /* Tamanho padrão da imagem */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Remove o blur e ajusta o tamanho */
+}
+
+.card .btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1c1c1c;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Espaço entre o botão e a imagem */
+}
+
+.card .btn:hover {
+    background-color: #8b8b8b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2b2b2b;
+    color: #fff; /* Texto branco no rodapé */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

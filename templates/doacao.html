@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação - EducaSimples</title>
+    <link rel="stylesheet" href="/static/css/doacao.css">
+    <link rel="icon" type="image/png" href="/static/uploads/Logo EducaSimples.png" sizes="16x16">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/materiais">Materiais</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+    <h1>Faça uma Doação</h1>
+    <p class="motivational-text">Sua contribuição faz toda a diferença! Obrigado por apoiar nosso trabalho.</p>
+
+    <div class="donation-container">
+        <div class="qr-code">
+            <img src="/static/uploads/qrcode.png" alt="QR Code PIX" width="250">
+        </div>
+        <div class="pix-key" id="pix-key">ce93a110-29bc-470a-a11b-a1ac66b6246d</div>
+        <button class="copy-button" onclick="copyPixKey()">Copiar Chave PIX</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EducaSimples - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function copyPixKey() {
+            const pixKey = document.getElementById('pix-key').innerText;
+            navigator.clipboard.writeText(pixKey).then(() => {
+                alert('Chave PIX copiada para a área de transferência!');
+            }).catch(err => {
+                console.error('Erro ao copiar a chave PIX: ', err);
+            });
+        }
+    </script>
+</body>
+</html>

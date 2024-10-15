@@ -1,0 +1,95 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #7d7d7d); /* Gradiente de fundo */
+    color: #333; /* Cor do texto */
+    text-align: center;
+}
+
+/* Estilos do Header */
+header {
+    background-color: #333; /* Fundo escuro para o header */
+    padding: 15px 0;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+nav a {
+    color: white; /* Links brancos */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilos do Título */
+h1 {
+    margin-top: 20px;
+    color: #fff; /* Título branco */
+}
+
+/* Texto Motivacional */
+.motivational-text {
+    font-size: 1.2em;
+    color: #ddd; /* Texto motivacional em cinza claro */
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container de Doação */
+.donation-container {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin: 20px auto;
+    width: 320px; /* Largura um pouco maior */
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.donation-container:hover {
+    transform: scale(1.02); /* Leve efeito de zoom ao passar o mouse */
+}
+
+/* Estilos do QR Code */
+.qr-code img {
+    margin: 15px 0;
+}
+
+/* Chave PIX */
+.pix-key {
+    font-size: 1.5em;
+    color: #000000; /* Cor azul */
+    margin: 10px 0;
+    word-break: break-all; /* Quebra de linha para chaves longas */
+}
+
+/* Botão de Copiar */
+.copy-button {
+    padding: 10px 15px;
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+    background-color: #000000; /* Fundo mais escuro ao passar o mouse */
+}
+
+/* Estilos do Footer */
+footer {
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat - EducaSimples</title>
+    <link rel="stylesheet" href="/static/css/forum.css">
+    <link rel="icon" type="image/png" href="/static/uploads/Logo EducaSimples.png" sizes="16x16">
+</head>
+<body>
+    <header>
+        <h1>Chat - EducaSimples</h1>
+    </header>
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flash-messages">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <div class="menu">
+            <a href="{{ url_for('nova_postagem') }}">➕ Publicar</a>
+            <a href="{{ url_for('dashboard') }}">🏠 Dashboard</a>
+        </div>
+
+        <ul class="post-list">
+            {% for postagem in postagens %}
+                <li class="post-item">
+                    <h3><a class="post-link" href="{{ url_for('visualizar_postagem', postagem_id=postagem.id) }}">{{ postagem.titulo }}</a></h3>
+                    <p>{{ postagem.descricao }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 EducaSimples - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

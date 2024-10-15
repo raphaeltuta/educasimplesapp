@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ postagem.titulo }} - EducaSimples</title>
+    <link rel="stylesheet" href="/static/css/ver_post.css">
+    <link rel="icon" type="image/png" href="/static/uploads/Logo EducaSimples.png" sizes="16x16">
+</head>
+<body>
+    <header>
+        <h1>Fórum EducaSimples</h1>
+    </header>
+    <div class="container">
+        <h2>{{ postagem.titulo }}</h2>
+        <p>{{ postagem.descricao }}</p>
+
+        <h3>Comentários</h3>
+        <ul>
+            {% for comentario in postagem.comentarios %}
+                <li><strong>{{ comentario.usuario }}:</strong> {{ comentario.comentario }}</li>
+            {% endfor %}
+        </ul>
+
+        <form action="{{ url_for('visualizar_postagem', postagem_id=postagem.id) }}" method="post">
+            <textarea name="comentario" placeholder="Adicionar um comentário" required></textarea>
+            <button type="submit">Comentar</button>
+        </form>
+        <a href="{{ url_for('forum') }}">Voltar ao Fórum</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 EducaSimples - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

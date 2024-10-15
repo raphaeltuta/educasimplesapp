@@ -1,0 +1,71 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #7d7d7d); /* Gradiente mais escuro para preto */
+    color: #333; /* Cor do texto em um cinza escuro */
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o container */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco para o container */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos do Header */
+header {
+    text-align: center; /* Centraliza o título do header */
+    margin-bottom: 20px; /* Espaçamento abaixo do header */
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamanho do texto do título */
+    color: #ffffff; /* Cor do texto do título em branco */
+}
+
+/* Estilos do Formulário */
+form {
+    display: flex; /* Flexbox para o formulário */
+    flex-direction: column; /* Coloca os elementos em coluna */
+}
+
+form input, form textarea {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+form button {
+    background-color: #333; /* Fundo escuro para o botão */
+    color: #ffffff; /* Texto em branco */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+form button:hover {
+    background-color: #555; /* Fundo mais claro ao passar o mouse */
+}
+
+/* Estilos do Link de Voltar */
+.container a {
+    display: inline-block; /* Exibe como um bloco inline */
+    margin-top: 20px; /* Espaçamento acima do link */
+    color: #333; /* Cor do texto em cinza escuro */
+    font-weight: 600; /* Negrito */
+}
+
+/* Estilos do Footer */
+footer {
+    text-align: center; /* Centraliza o texto do footer */
+    margin-top: 20px; /* Espaçamento acima do footer */
+    color: #ffffff; /* Cor do texto do footer em branco */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Nova Postagem - EducaSimples</title>
+    <link rel="stylesheet" href="/static/css/publicar_post.css">
+    <link rel="icon" type="image/png" href="/static/uploads/Logo EducaSimples.png" sizes="16x16">
+</head>
+<body>
+    <header>
+        <h1>Fórum EducaSimples</h1>
+    </header>
+    <div class="container">
+        <h2>Adicionar Nova Postagem</h2>
+        <form action="{{ url_for('nova_postagem') }}" method="post">
+            <input type="text" name="titulo" placeholder="Título" required>
+            <textarea name="descricao" placeholder="Descrição" required></textarea>
+            <button type="submit">Publicar</button>
+        </form>
+        <a href="{{ url_for('forum') }}">Voltar ao Fórum</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 EducaSimples - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

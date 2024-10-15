@@ -1,0 +1,106 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #7d7d7d); /* Gradiente mais escuro para preto */
+    color: #333; /* Cor do texto em um cinza escuro */
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o container */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco para o container */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos do Header */
+header {
+    text-align: center; /* Centraliza o título do header */
+    margin-bottom: 20px; /* Espaçamento abaixo do header */
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamanho do texto do título */
+    color: #ffffff; /* Cor do texto do título em branco */
+}
+
+/* Estilos das Mensagens de Flash */
+.flash-messages {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+}
+
+.flash-messages li {
+    margin: 10px 0; /* Espaçamento entre mensagens */
+    padding: 10px;
+    border-radius: 5px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto */
+}
+
+.flash-messages .error {
+    background-color: #dc3545; /* Vermelho */
+}
+
+.flash-messages .success {
+    background-color: #28a745; /* Verde */
+}
+
+/* Estilos do Menu */
+.menu {
+    display: flex; /* Flexbox para o menu */
+    justify-content: space-around; /* Espaçamento entre links */
+    margin-bottom: 20px; /* Espaçamento abaixo do menu */
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Cor do texto em cinza escuro */
+    font-weight: 600; /* Negrito */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: 2px solid transparent; /* Borda invisível */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, border 0.3s; /* Transições suaves */
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo escuro ao passar o mouse */
+    color: #333; /* Texto cinza escuro ao passar o mouse */
+    border: 2px solid #333; /* Borda escura ao passar o mouse */
+}
+
+/* Estilos da Lista de Postagens */
+.post-list {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+}
+
+.post-item {
+    margin: 15px 0; /* Espaçamento entre postagens */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Borda semitransparente */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para hover */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
+}
+
+.post-item:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1.0); /* Brilho suave em volta */
+}
+
+/* Estilos do Link da Postagem */
+.post-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Cor do texto em cinza escuro */
+    font-weight: 600; /* Negrito */
+}
+
+/* Estilos do Footer */
+footer {
+    text-align: center; /* Centraliza o texto do footer */
+    margin-top: 20px; /* Espaçamento acima do footer */
+    color: #ffffff; /* Cor do texto do footer em branco */
+}

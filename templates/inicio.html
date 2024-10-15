@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaSimples - Sobre Nós</title>
+    <link rel="stylesheet" href="/static/css/principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/static/uploads/Logo_EducaSimples.png" sizes="16x16">
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #333, #000);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            font-weight: 600;
+            font-size: 2.8rem;
+            margin: 0;
+        }
+
+        header p {
+            font-weight: 300;
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        /* Estilo dos botões de logar e cadastrar */
+        .auth-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .auth-buttons a {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .auth-buttons a:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        /* Conteúdo principal */
+        .content-container {
+            padding: 40px;
+            background-color: #f9f9f9;
+            min-height: 100vh;
+            text-align: left;
+        }
+
+        .content-container h2 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content-container p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Cartões de informações */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .info-card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .info-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 768px) {
+            .auth-buttons {
+                top: 10px;
+                right: 10px;
+            }
+
+            .content-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao EducaSimples!</h1>
+        <p>Transformando vidas por meio da educação 📚.</p>
+
+        <div class="auth-buttons">
+            <a href="/login">Conecte-se</a>
+            <a href="/cadastro">Inscreva-se</a>
+        </div>
+    </header>
+
+    <section class="content-container">
+        <h2>Sobre Nós</h2>
+        <p>O EducaSimples nasceu com o propósito de tornar a educação acessível a todos. Nossa plataforma conecta alunos, professores e conteúdos de qualidade, permitindo que você aprenda no seu ritmo e de forma colaborativa.</p>
+
+        <h2>Metas Alcançadas</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📈 Impacto Positivo</h3>
+                <p>Em menos de 5 anos, ajudamos mais de 10 mil alunos a realizarem seus sonhos educacionais.</p>
+            </div>
+            <div class="info-card">
+                <h3>🌎 Comunidade Global</h3>
+                <p>Fazemos parte de uma comunidade global de alunos e professores que compartilham o objetivo de aprender e crescer juntos.</p>
+            </div>
+        </div>
+
+        <h2>Nossa Missão</h2>
+        <p>Somos apaixonados pela ideia de que o conhecimento deve ser livre e acessível para todos. Acreditamos que a educação tem o poder de mudar o mundo, uma pessoa de cada vez.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Cabeçalho da dashboard */
+header.dashboard-header {
+    background: linear-gradient(135deg, #333, #000);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header.dashboard-header h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+header.dashboard-header p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Menu lateral */
+.side-menu {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 30px;
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); /* Oculte o menu por padrão */
+}
+
+/* Estilo do botão de menu */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block; /* Mostra o botão em todas as telas */
+}
+
+/* Estilo do menu de opções */
+.side-menu.active {
+    transform: translateX(0); /* Mostra o menu quando ativo */
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+    color: #e74c3c;
+    transform: translateX(10px);
+}
+
+/* Conteúdo principal */
+.dashboard-content {
+    margin-left: 240px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.dashboard-content h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dashboard-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Grid de recursos */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.resource-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.resource-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resource-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        position: fixed; /* Mantém o menu fixo na posição */
+        height: auto;
+        z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
+    }
+
+    .dashboard-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .side-menu.active {
+        transform: translateX(0); /* Mostra o menu quando ativo */
+    }
+}
+
+/* Ajuste para desktops */
+@media (min-width: 769px) {
+    .dashboard-content {
+        margin-left: 240px; /* Espaço para o menu lateral */
+    }
+
+    .side-menu {
+        width: 220px; /* Largura fixa para o menu lateral */
+        position: fixed; /* Mantém o menu na posição fixa */
+    }
+}
+
+.button-link {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Adiciona este estilo para remover o efeito de foco */
+.button-link:focus {
+    outline: none; /* Remove o contorno azul quando o link é focado */
+}

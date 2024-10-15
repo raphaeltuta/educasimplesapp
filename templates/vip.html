@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra VIP</title>
+    <link rel="stylesheet" href="/static/css/principal.css">
+    <style>
+        .vip-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .qr-code {
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+        }
+        .pix-key {
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .btn-copy {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="vip-container">
+        <h1>Finalize sua compra VIP</h1>
+        <p>Faça o pagamento usando o QR Code abaixo ou copie a chave PIX:</p>
+
+        <img src="{{ pix_qr_code_link }}" alt="QR Code PIX" class="qr-code"> <!-- Exibe o QR Code -->
+        <div class="pix-key">Chave PIX: {{ pix_qr_code }}</div>
+        <button class="btn-copy" onclick="copyPixKey()">Copiar Chave PIX</button>
+    </div>
+
+    <script>
+        function copyPixKey() {
+            const pixKey = "{{ pix_qr_code }}";
+            navigator.clipboard.writeText(pixKey).then(() => {
+                alert("Chave PIX copiada!");
+            });
+        }
+    </script>
+</body>
+</html>
